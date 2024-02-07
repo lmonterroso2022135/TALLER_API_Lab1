@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "animalesColeccion",
+    "dateExported": "2024-02-07T23:33:02.255Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6c50f2db-93b4-446e-b714-383cc9f74487",
+            "colId": "cd4c72b0-3acf-4314-ab85-456babd49deb",
+            "containerId": "",
+            "name": "get Animales",
+            "url": "http://localhost:3000/api/animales",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-07T21:54:37.481Z",
+            "modified": "2024-02-07T22:54:04.084Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f734a73c-96cc-4cc7-9918-9c84005886f1",
+            "colId": "cd4c72b0-3acf-4314-ab85-456babd49deb",
+            "containerId": "",
+            "name": "post Animales",
+            "url": "http://localhost:3000/api/animales",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-07T22:29:35.511Z",
+            "modified": "2024-02-07T23:31:31.671Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Pepe\",\n  \"especie\": \"Gato\",\n  \"raza\": \"Angora\",\n  \"edad\": 5\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "50bbdee8-1f88-4d71-81cf-0d73a99f4c47",
+            "colId": "cd4c72b0-3acf-4314-ab85-456babd49deb",
+            "containerId": "",
+            "name": "get AnimalId",
+            "url": "http://localhost:3000/api/animales/65c41127cd647536fe25d979",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-07T23:02:36.798Z",
+            "modified": "2024-02-07T23:32:01.223Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0359b687-07b8-4414-9faf-d9344e74108a",
+            "colId": "cd4c72b0-3acf-4314-ab85-456babd49deb",
+            "containerId": "",
+            "name": "put Animales",
+            "url": "http://localhost:3000/api/animales/65c41194cd647536fe25d97d",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-02-07T23:11:21.201Z",
+            "modified": "2024-02-07T23:26:45.253Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Gabriel\",\n  \"raza\": \"Si\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "598b54e5-e05b-4405-80af-cddf468c3bf8",
+            "colId": "cd4c72b0-3acf-4314-ab85-456babd49deb",
+            "containerId": "",
+            "name": "delete Animales",
+            "url": "http://localhost:3000/api/animales/65c411f9cd647536fe25d991",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-02-07T23:20:12.537Z",
+            "modified": "2024-02-07T23:29:22.161Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
