@@ -23,6 +23,9 @@ const getUsuarioId = async (req, res) => {
     const {id} = req.params;
     const usuario = await Usuario.findOne({_id: id});
 
+    if (!usuario || usuario.estado === false) {
+        return res.status(404).json({ message: "Usuario no encontrado o inhabilitado" });
+    }
 
     res.status(200).json({
         usuario
@@ -40,6 +43,8 @@ const putUsuarios = async (req, res = response) =>{
     }
 
     const usuario = await Usuario.findByIdAndUpdate(id, resto);
+    
+
     res.status(200).json({
         msg: 'Usuario Actualizado exitosamente',
         usuario

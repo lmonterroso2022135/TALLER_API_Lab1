@@ -22,6 +22,10 @@ const animalIdGet = async(req, res) =>{
     const {id} =req.params;
     const animal = await Animal.findOne({_id: id});
 
+    if (!usuario || animal.estado === false) {
+        return res.status(404).json({ message: "Usuario no encontrado o inhabilitado" });
+    }
+
     res.status(200).json({
         animal
     });
